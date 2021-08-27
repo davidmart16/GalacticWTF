@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>~ Galactic WTF ~</title>
+  </head>
+  <body>
+    <div class="restart_container_hidden" id="restart_id">
+      <span><h2 id="restart">RESTART <i class="fas fa-undo"></i></h2></span>
+    </div>
+    <div class="menu_container_hidden" id="menu_id">
+      <span><h2 id="menu"><i class="fas fa-bars"></i> MENU</h2></span>
+    </div>
+
+    <div class="menu__container">
+      <div class="text_container">
+        <span id="meteor"><i class="fas fa-meteor"></i></span>
+        <h1>Galactic WTF</h1>
+        <div class="mid_container">
+        <h2>Instrucciones</h2>
+          <div class="columna1">
+          <ul class="instrucciones">
+            <li>
+              <i class="fab fa-empire"></i> Consigue
+              <span id="puntos">10.000 puntos</span> para ganar.
+            </li>
+            <li>
+              <i class="fab fa-empire"></i> Recoge <span><img src="img/coin.png" alt="coin image" width="30px" height="30px"> para ralentizar a los
+              asteroides.
+            </li>
+            <li>
+              <i class="fab fa-empire"></i> Captura <span><img src="img/oneupimg.png" alt="1up image" width="50px" height="41.6px"></span> para recuperarte.
+            </li>
+            <li>
+              <i class="fab fa-empire"></i>
+              <span id="danger">¡No dejes pasar ni un meteorito! </span> El mundo depende de tí.
+            </li>
+          </ul>
+        </div>
+        <div class="columna2">
+          <img src="img/controles.png" alt="controles">
+        </div>
+        </div class="start_button">
+          <p id="start">START</p>
+        </div>
+      </div>
+    </div>
+
+    <canvas id="canvasHidden"></canvas>
+
+    <script src="js/bullet.js"></script>
+    <script src="js/negative-ball.js"></script>
+    <script src="js/positive-ball.js"></script>
+    <script src="js/random-ball.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/column.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
