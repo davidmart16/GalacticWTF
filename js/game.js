@@ -620,7 +620,7 @@ const Game = {
   },
 
   checkWin() {
-    if (this.score >= 5000) {
+    if (this.score >= 10000) {
       this.ctx.fillStyle = "red";
       this.ctx.fillRect(1454.9, 36.6, 1.6, 26.6);
       this.winAudio.play();
